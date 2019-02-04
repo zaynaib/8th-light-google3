@@ -27,11 +27,10 @@ $(document).ready(function (){
              let bookCover = bookItem.volumeInfo.imageLinks.thumbnail;
              let link = bookItem.volumeInfo.previewLink;
             
-             //console.log(title,author,publisher,bookCover)
             
             
             // Creating new Div and assigning to a newDiv variable and giving it a class of booksDiv   
-            let newDiv = $("<div>").addClass("booksDiv").addClass("col");
+            let bookDiv = $("<div>").addClass("booksDiv").addClass("col");
     
         // New ImageDiv with a Class of BookCover and assigning a src of the bookCover variable
        let imageDiv = $("<img>").addClass("bookCover").attr("src", bookCover);
@@ -54,12 +53,12 @@ $(document).ready(function (){
           
                  // append imageDiv & BookInfo to newDiv
 
-                newDiv.append(imageDiv);
-                newDiv.append(bookInfoDiv);
+                bookDiv.append(imageDiv);
+                bookDiv.append(bookInfoDiv);
             
              
             // append newDiv to DOM
-                $("#resultsDiv").append(newDiv);
+                $("#resultsDiv").append(bookDiv);
                 
             
     
