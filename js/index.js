@@ -39,8 +39,8 @@ $(document).ready(function (){
         
         // new Div with class of bookInfo and insert all the bookinfo in the Div
                 let bookInfoDiv = $("<div>").addClass("bookInfo").html(
-                        "<p> Author: " + author +  "</p>"+
                         "<p> Title: " + title + "</p>" + 
+                        "<p> Author: " + author +  "</p>"+
                         "<p> Published by: " + publisher + "</p>" +
                         "<a href="+link + ">" + 'Find out more about '+ title + "</a>"
                   
