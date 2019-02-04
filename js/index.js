@@ -6,9 +6,7 @@ $(document).ready(function (){
     //when the user clicks on search
     $(document).on("click", "#searchBook", function() {
               let bookName = $("#bookName").val();
-         console.log(bookName)
 
-      console.log("hello motto");
    
     let queryURL = "https://www.googleapis.com/books/v1/volumes?q=" + bookName;
   
@@ -18,11 +16,8 @@ $(document).ready(function (){
       // Examine the text in the response
       response.json().then(
         function(books) {
-        //console.log(data);
           for(let i = 0; i<books.items.length; i++){
             let bookItem = books.items[i]
-            //console.log(books.items[i])
-            console.log(bookItem.volumeInfo.title)
             
             // saving each data we need from the response to a variable
             //book's author, title, and publishing company, 
@@ -36,7 +31,7 @@ $(document).ready(function (){
             
             
             // Creating new Div and assigning to a newDiv variable and giving it a class of booksDiv   
-            let newDiv = $("<div>").addClass("booksDiv");
+            let newDiv = $("<div>").addClass("booksDiv").addClass("col");
     
         // New ImageDiv with a Class of BookCover and assigning a src of the bookCover variable
        let imageDiv = $("<img>").addClass("bookCover").attr("src", bookCover);
