@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+.formDiv{
+    width: 30%;
+    display: block;
+}
+
+.bookCover{
+    display: inline-block;
+    border: 2px solid green;
+    width:30%;
+}
+
+.bookInfo{
+    float: right;
+    border: 2px solid black;
+    width: 70%;
+    padding-left: 10px;
+}
+
+.booksDiv{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.header, .footer, .content {
+    position: absolute;
+    width: 100%;
+}
+
+.header, .footer { height: 50px; }
+
+.header { top: 0; }
+.footer { bottom: 0; }
+
+.logo1{
+    margin: 15px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+section{
+    min-height: 700px;
+}
