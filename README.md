@@ -1,5 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/OG/pen/QYvEBW.
-
 # Book Search
 
 This a reponsive web application that allows the user to search for books using the Google Books API.
