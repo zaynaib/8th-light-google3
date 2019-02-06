@@ -26,7 +26,3 @@ From the command line type `git clone https://github.com/zaynaib/8th-light-googl
 3. To find more information about a certain book in the results click on the 'Find out more' link in the book description
 
 [Video Instructions](https://drive.google.com/file/d/1gsrrUsQjBaUr4esFpxcHcm9mNYEeT0rN/view)
-
-To do
-work on the layout bootstrap ***
-the test case for unavaiable content
